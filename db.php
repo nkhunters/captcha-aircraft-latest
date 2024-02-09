@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost";
+$servername = "aircraft.cqalnaq7jxxj.ap-south-1.rds.amazonaws.com";
 $username = "root";
-$password = "qwertyShubu2109@";
-$dbname = "aircraft_new";
+$password = "qwertyShubu2109";
+$dbname = "aircraft";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
