@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Create User</title>
+
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color:#F0F0F0;">
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="http://amazingkart.in/CaptchaApi/createuser.html">Create User <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://amazingkart.in/CaptchaApi/admindashboard.html">Create Captcha</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="http://amazingkart.in/CaptchaApi/viewusers.php">View User</a>
+                </li>
+				 <li class="nav-item">
+                    <a class="nav-link" href="http://amazingkart.in/CaptchaApi/viewcaptcha.php">View Captcha</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://amazingkart.in/CaptchaApi/approverequests.php">Next Order Requests</a>
+                </li>
+        
+            </ul>
+                    </div>
+            </nav>
+            
+			<br><br>
+    
+    <div class="container">
+      
+            <div class="row">
+                
+                <div class="col-lg-4 col-md-4 col-sm-12">
+
+                    <div class="card" style="box-shadow: 0 0 4px 0 rgba(0,0,0,.08), 0 2px 4px 0 rgba(0,0,0,.12);  border-radius: 3px;">
+
+
+                        <br />
+                        <div class="card-body">
+
+                            <h3>SET RATE</h3>
+                            <hr /><br />
+
+
+                            <form action="/CaptchaApi/public/setRates" method="post">
+                                <div class="form-group">
+
+                                    <input type="number" class="form-control" placeholder="No. of captchas" name="captcha_count">
+                                </div>
+                               
+                                <div class="form-group">
+
+                                    <input type="number" class="form-control" placeholder="Rate ($)" name="captcha_rate">
+                                </div>
+                                
+
+                                <div class="form-group">
+
+                                    <button type="submit" class="btn btn-primary" style="background: linear-gradient(to bottom,#139ff0 0,#0087e0 100%);border: 1px solid #0087e0; color: #F7F7F7;font-weight: 700; text-shadow: 0 -1px transparent;">CREATE</button>
+                                <br /><br />
+                                
+                                </div>
+                           
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+      
+    </div>
+
+
+</body>
+</html>
