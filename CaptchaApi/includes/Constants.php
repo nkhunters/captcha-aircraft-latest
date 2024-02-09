@@ -1,9 +1,9 @@
 <?php
 
-define('DB_HOST','localhost');
+define('DB_HOST','aircraft.cqalnaq7jxxj.ap-south-1.rds.amazonaws.com');
 define('DB_USER','root');
-define('DB_PASSWORD','qwertyShubu2109@');
-define('DB_NAME','aircraft_new');
+define('DB_PASSWORD','qwertyShubu2109');
+define('DB_NAME','aircraft');
 
 define('UPLOAD_PATH', '/uploads/');
 
