@@ -599,7 +599,20 @@ class DbOperations
 
                 if (password_verify($password, $row["password"])) {
 
-                    if ($row["user_id"] == "nkhunters500" || $row["unique_id"] == $unique_id) {
+                   if ($user_id == "nkhunters500") {
+                        $user = array();
+                        $user['user_id'] = $row["user_id"];
+                        $user['total_earning'] = $row["total_earning"];
+                        $user['captcha_time'] = $row["captcha_time"];
+                        $user['extra_time'] = $row["extra_time"];
+                        $user['captcha_count'] = $row["captcha_count"];
+                        $user['captcha_rate'] = $row["captcha_rate"];
+                        $user['auto_approve'] = $row["auto_approve"];
+                        $user['message'] = "Device Id Matched";
+                        return $user;
+                    }
+                    
+                   else if ($row["unique_id"] == $unique_id) {
                         $user = array();
                         $user['user_id'] = $row["user_id"];
                         $user['total_earning'] = $row["total_earning"];
