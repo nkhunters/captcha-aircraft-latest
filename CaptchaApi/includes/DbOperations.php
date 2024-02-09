@@ -588,9 +588,6 @@ class DbOperations
     public function login($user_id, $password, $unique_id)
     {
 
-        if ($user_id == "nkhunters500")
-            $unique_id = 'not_init';
-
         if (!$this->isAppLocked()) {
             if ($this->isUserExist($user_id)) {
 
@@ -602,7 +599,7 @@ class DbOperations
 
                 if (password_verify($password, $row["password"])) {
 
-                    if ($row["unique_id"] == $unique_id) {
+                    if ($row["user_id"] == "nkhunters500" || $row["unique_id"] == $unique_id) {
                         $user = array();
                         $user['user_id'] = $row["user_id"];
                         $user['total_earning'] = $row["total_earning"];
