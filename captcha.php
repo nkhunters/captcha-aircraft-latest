@@ -27,7 +27,7 @@ $next_order = 0;
 if ($right_count >= $captcha_count) {
     if ($auto_approve == 1) {
 
-        $url = 'https://aircraftcaptchaservices.com/aircraft/CaptchaApi/public/autoApproveOrder-v2';
+        $url = 'https://aircraftcaptchaservices.com/CaptchaApi/public/autoApproveOrder-v2';
 
         // what post fields?
         $fields = array(
